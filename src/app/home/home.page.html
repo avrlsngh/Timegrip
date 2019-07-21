@@ -1,0 +1,54 @@
+
+<ion-content>
+
+  <!-- <ion-item color="dark">
+    <ion-label>Rest Duration</ion-label>
+    <ion-datetime display-format="mm:ss" placeholder="Tap Here" [(ngModel)]="fullTime"></ion-datetime>
+  </ion-item> -->
+  <ion-label text-center><h1 style="font-size: 48px; color:#fc266a;">TimeGrip</h1></ion-label>
+
+  <ion-item color="dark" margin >
+    <ion-label style="color: white">Tap to Set</ion-label>
+    <ion-datetime displayFormat="mm:ss" placeholder="Set Duration" [(ngModel)]="duration"></ion-datetime>
+  </ion-item>
+
+
+<ion-grid style="display:flex;flex-flow: column;justify-content: flex-start; align-items: center;margin-top: 30%">
+  <ion-row>
+    <ion-col>
+      <round-progress
+            [current]="progress"
+            [max]="totalTime"
+            [color]="'#fc266a'"
+            [background]="'#212121'"
+            [radius]="150"
+            [stroke]="20"
+            [semicircle]="false"
+            [rounded]="true"
+            [clockwise]="true"
+            [responsive]="false"
+            [duration]="timer"
+            [animation]="'easeInSine'"
+            [animationDelay]="0"
+            (onRender)="doSomethingWithCurrentValue($event)"></round-progress>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-label padding><h1 style="color: white; font-size: 36px;">{{this.minuteCount}} : {{this.secondCount_first}}{{this.secondCount_second}}</h1></ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col padding>
+      <ion-button (click)="process_timer()">
+        <ion-icon slot="icon-only" [name]="action_icon"></ion-icon>
+      </ion-button>
+    </ion-col>
+    <ion-col padding>
+      <ion-button (click)="stop_timer()" id="stop_button">
+        <ion-icon slot="icon-only" name="square"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

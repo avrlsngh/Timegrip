@@ -1,0 +1,36 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
+ion-content {
+  font-family: 'Audiowide';
+}
+.sc-ion-picker-md-h {
+  --background: #212121;
+  color: aliceblue;
+}
+.picker-button.sc-ion-picker-md, .picker-button.activated.sc-ion-picker-md {
+  color: #fc266a;
+}
+.picker-opt.picker-opt-selected, .picker-prefix, .picker-suffix {
+  color: #fc266a
+}
+
+ion-button {
+  --background: #212121;
+  border-radius: 50px;
+}
+
+#stop_button {
+  --background: #fc266a;
+}

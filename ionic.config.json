@@ -1,0 +1,7 @@
+{
+  "name": "timegrip",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

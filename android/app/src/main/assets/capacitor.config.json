@@ -1,0 +1,7 @@
+{
+  "appId": "com.timeionapp.timegrip",
+  "appName": "timegrip",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
